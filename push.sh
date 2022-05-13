@@ -6,7 +6,7 @@ REPO="gcr.io/ps-prod-container-repo/"
 TAG="$REPO$SERVICE:${1}-$COMMITID"
 echo ${TAG}
 
-echo "${COMMITID}" >> index.html
+echo "${COMMITID}" > index.html
 
 echo "*****${COMMITID}********"
 
