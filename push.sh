@@ -8,10 +8,5 @@ echo ${TAG}
 
 echo "*****${VERSION}********"
 
-if [[ -z "${1}" ]]; then
-  docker buildx build --platform linux/arm64,linux/amd64 --build-arg VERSION="${VERSION}" \
-    -t ${TAG} --push .
-else
-  docker buildx build --platform linux/arm64,linux/amd64 --build-arg VERSION="${VERSION}" \
-    -t ${TAG} --push .
-fi
+docker buildx build --platform linux/arm64,linux/amd64 --build-arg VERSION="${VERSION}" \
+-t ${TAG} --push .
