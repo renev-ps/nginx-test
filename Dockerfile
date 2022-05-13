@@ -1,7 +1,7 @@
 FROM nginx
 
 ARG VERSION
-ENV VERSION=$VERSION
+ENV COMMITID=$VERSION
 COPY index.html /usr/share/nginx/html/
 
 
