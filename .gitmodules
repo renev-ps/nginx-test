@@ -1,0 +1,3 @@
+[submodule "build-all"]
+	path = build-all
+	url = git@github.com:renev-ps/build-all.git
